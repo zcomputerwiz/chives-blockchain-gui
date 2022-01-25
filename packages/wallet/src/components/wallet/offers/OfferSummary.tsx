@@ -39,8 +39,8 @@ export default function OfferSummary(props: Props) {
   const takerEntries: [string, number][] = Object.entries(summary.requested);
   const makerAssetInfo = makerEntries.length === 1 ? lookupByAssetId(makerEntries[0][0]) : undefined;
   const takerAssetInfo = takerEntries.length === 1 ? lookupByAssetId(takerEntries[0][0]) : undefined;
-  const makerAmount = makerEntries[0][0].toLowerCase() === 'xch' ? Number(mojo_to_chives(makerEntries[0][1])) : Number(mojo_to_colouredcoin(makerEntries[0][1]));
-  const takerAmount = takerEntries[0][0].toLowerCase() === 'xch' ? Number(mojo_to_chives(takerEntries[0][1])) : Number(mojo_to_colouredcoin(takerEntries[0][1]));
+  const makerAmount = makerEntries[0][0].toLowerCase() === 'xcc' ? Number(mojo_to_chives(makerEntries[0][1])) : Number(mojo_to_colouredcoin(makerEntries[0][1]));
+  const takerAmount = takerEntries[0][0].toLowerCase() === 'xcc' ? Number(mojo_to_chives(takerEntries[0][1])) : Number(mojo_to_colouredcoin(takerEntries[0][1]));
   const makerExchangeRate = makerAssetInfo && takerAssetInfo ? takerAmount / makerAmount : undefined;
   const takerExchangeRate = makerAssetInfo && takerAssetInfo ? makerAmount / takerAmount : undefined;
 
