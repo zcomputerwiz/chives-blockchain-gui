@@ -14,7 +14,7 @@ const display: {
 } = {
   chives: {
     format: '{amount} XCC',
-    fractionDigits: 12,
+    fractionDigits: 8,
   },
   mojo: {
     format: '{amount} MJ',
@@ -22,7 +22,7 @@ const display: {
   },
   cat: {
     format: '{amount} CAT',
-    fractionDigits: 3,
+    fractionDigits: 5,
   },
 };
 
