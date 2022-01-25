@@ -446,7 +446,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Chia Blockchain Wiki' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/wiki',
+                'https://github.com/HiveProject2021/chia-blockchain/wiki',
               );
             },
           },
@@ -454,7 +454,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/wiki/FAQ',
+                'https://github.com/HiveProject2021/chia-blockchain/wiki/FAQ',
               );
             },
           },
@@ -462,7 +462,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/releases',
+                'https://github.com/HiveProject2021/chia-blockchain/releases',
               );
             },
           },
@@ -470,7 +470,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/blob/master/CONTRIBUTING.md',
+                'https://github.com/HiveProject2021/chia-blockchain/blob/master/CONTRIBUTING.md',
               );
             },
           },
@@ -481,7 +481,7 @@ if (!handleSquirrelEvent()) {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
               openExternal(
-                'https://github.com/Chia-Network/chia-blockchain/issues',
+                'https://github.com/HiveProject2021/chia-blockchain/issues',
               );
             },
           },

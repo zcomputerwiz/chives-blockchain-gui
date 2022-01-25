@@ -144,7 +144,7 @@ export default function About(props: Props) {
         </VersionsTable>
 
         <BugReport
-          href="https://github.com/Chia-Network/chia-blockchain/issues"
+          href="https://github.com/HiveProject2021/chia-blockchain/issues"
           target="_blank"
         >
           Report an issue

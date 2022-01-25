@@ -36,7 +36,7 @@ export default function PlotOverviewHero() {
               }
               <Link
                 target="_blank"
-                href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture"
+                href="https://github.com/HiveProject2021/chia-blockchain/wiki/Network-Architecture"
               >
                 Learn more
               </Link>
