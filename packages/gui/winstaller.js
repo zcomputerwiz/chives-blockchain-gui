@@ -14,12 +14,12 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    name: "chives-blockchain",
+    name: "chives-light-wallet",
     appDirectory: path.join(rootPath, 'Chives-win32-x64'),
     authors: 'Chives Network',
     version: process.env.CHIVES_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/Chia-Network/chives-blockchain/master/electron-react/src/assets/img/chives.ico',
+    iconUrl: 'https://raw.githubusercontent.com/Chia-Network/chives-light-wallet/master/electron-react/src/assets/img/chives.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,

@@ -35,7 +35,7 @@ export default function FarmOverviewHero() {
               where your farm will be once you add a plot.{' '}
               <Link
                 target="_blank"
-                href="https://github.com/Chia-Network/chives-blockchain/wiki/Network-Architecture"
+                href="https://github.com/Chia-Network/chives-light-wallet/wiki/Network-Architecture"
               >
                 Learn more
               </Link>
