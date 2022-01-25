@@ -14,8 +14,8 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    name: "chives-light-wallet",
-    appDirectory: path.join(rootPath, 'Chives-win32-x64'),
+    name: "chives-wallet",
+    appDirectory: path.join(rootPath, 'Chives Light Wallet-win32-x64'),
     authors: 'Hive Project',
     version: process.env.CHIVES_INSTALLER_VERSION,
     noMsi: true,
@@ -23,8 +23,8 @@ function getInstallerConfig () {
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
-    exe: 'Chives.exe',
-    setupExe: 'ChivesSetup-' + process.env.CHIVES_INSTALLER_VERSION + '.exe',
+    exe: 'Chives-Wallet.exe',
+    setupExe: 'ChivesWalletSetup-' + process.env.CHIVES_INSTALLER_VERSION + '.exe',
     setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chives.ico')
   })
 }
