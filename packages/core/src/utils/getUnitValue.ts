@@ -12,7 +12,7 @@ type Display = {
 const display: {
   [key in Unit]: Display;
 } = {
-  chia: {
+  chives: {
     format: '{amount} XCH',
     fractionDigits: 12,
   },

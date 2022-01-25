@@ -9,8 +9,8 @@ import {
   TooltipIcon,
   useOpenDialog,
   useShowError,
-} from '@chia/core';
-import { OfferTradeRecord } from '@chia/api';
+} from '@chives/core';
+import { OfferTradeRecord } from '@chives/api';
 import {
   Button,
   Checkbox,
@@ -237,7 +237,7 @@ type KeybaseCLIRequest = {
   }
 };
 
-const KeybaseTeamName = 'chia_offers';
+const KeybaseTeamName = 'chives_offers';
 const KeybaseChannelName = 'offers-trading';
 
 async function execKeybaseCLI(request: KeybaseCLIRequest): Promise<boolean> {

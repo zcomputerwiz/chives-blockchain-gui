@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Trans } from '@lingui/macro';
-import { Amount, Form, AlertDialog, Back, Card, Flex, ButtonLoading, chiaToMojo } from '@chia/core';
+import { Amount, Form, AlertDialog, Back, Card, Flex, ButtonLoading, chivesToMojo } from '@chives/core';
 import {
   Typography,
   Button,
@@ -36,7 +36,7 @@ export default function WalletDIDCreate() {
       const didArray = data.backup_dids?.map((item) => item.backupid) ?? [];
       let uniqDidArray = Array.from(new Set(didArray));
       uniqDidArray = uniqDidArray.filter(item => item !== "")
-      const amount_val = chiaToMojo(data.amount);
+      const amount_val = chivesToMojo(data.amount);
       if (
         amount_val === '' ||
         Number(amount_val) === 0 ||

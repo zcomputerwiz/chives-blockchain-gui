@@ -1,6 +1,6 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { Flex, Link } from '@chia/core';
+import { Flex, Link } from '@chives/core';
 import { Box, Typography } from '@material-ui/core';
 import styled from 'styled-components';
 import { Shell } from 'electron';

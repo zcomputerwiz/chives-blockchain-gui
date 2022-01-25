@@ -18,8 +18,8 @@ import {
   TableControlled,
   TooltipIcon,
   useOpenDialog,
-} from '@chia/core';
-import { OfferTradeRecord } from '@chia/api';
+} from '@chives/core';
+import { OfferTradeRecord } from '@chives/api';
 import {
   Box,
   Button,
@@ -33,11 +33,11 @@ import {
   Typography
 } from '@material-ui/core';
 import { Cancel, GetApp as Download, Info, Reply as Share, Visibility } from '@material-ui/icons';
-import { Trade as TradeIcon } from '@chia/icons';
-import { useCancelOfferMutation, useGetAllOffersQuery, useGetOfferDataMutation, useGetWalletsQuery } from '@chia/api-react';
+import { Trade as TradeIcon } from '@chives/icons';
+import { useCancelOfferMutation, useGetAllOffersQuery, useGetOfferDataMutation, useGetWalletsQuery } from '@chives/api-react';
 import { colorForOfferState, displayStringForOfferState, formatAmountForWalletType, suggestedFilenameForOffer } from './utils';
 import useAssetIdName from '../../../hooks/useAssetIdName';
-import { chia_to_mojo, mojo_to_colouredcoin_string } from '../../../util/chia';
+import { chives_to_mojo, mojo_to_colouredcoin_string } from '../../../util/chives';
 import { CreateOfferEditor } from './OfferEditor';
 import { OfferImport } from './OfferImport';
 import { OfferViewer } from './OfferViewer';
@@ -74,7 +74,7 @@ function ConfirmOfferCancellation(props: ConfirmOfferCancellationProps) {
 
   // Communicate value updates to the parent component
   useEffect(() => {
-    const feeInMojos = fee ? Number.parseFloat(chia_to_mojo(fee)) : 0;
+    const feeInMojos = fee ? Number.parseFloat(chives_to_mojo(fee)) : 0;
     onUpdateValues({ cancelWithTransaction, cancellationFee: feeInMojos });
   }, [cancelWithTransaction, fee]);
 

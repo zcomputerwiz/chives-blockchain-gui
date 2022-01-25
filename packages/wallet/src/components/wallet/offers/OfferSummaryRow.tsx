@@ -5,7 +5,7 @@ import {
   Flex,
   FormatLargeNumber,
   TooltipIcon,
-} from '@chia/core';
+} from '@chives/core';
 import {
   Box,
   Typography,
@@ -13,7 +13,7 @@ import {
 import useAssetIdName from '../../../hooks/useAssetIdName';
 import WalletType from '../../../constants/WalletType';
 import { formatAmountForWalletType } from './utils';
-import { mojo_to_colouredcoin_string } from '../../../util/chia';
+import { mojo_to_colouredcoin_string } from '../../../util/chives';
 import styled from 'styled-components';
 
 const StyledTitle = styled(Box)`

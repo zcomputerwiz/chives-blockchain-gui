@@ -18,12 +18,12 @@ import {
   TableControlled,
   TooltipIcon,
   useOpenDialog,
-  chiaToMojo, 
+  chivesToMojo, 
   mojoToCATLocaleString,
   useShowSaveDialog,
   Tooltip,
-} from '@chia/core';
-import { OfferTradeRecord } from '@chia/api';
+} from '@chives/core';
+import { OfferTradeRecord } from '@chives/api';
 import fs from 'fs';
 import { Remote } from 'electron';
 import {
@@ -39,8 +39,8 @@ import {
   Typography
 } from '@material-ui/core';
 import { Cancel, GetApp as Download, Info, Reply as Share, Visibility } from '@material-ui/icons';
-import { Trade as TradeIcon } from '@chia/icons';
-import { useCancelOfferMutation, useGetAllOffersQuery, useGetOfferDataMutation, useGetWalletsQuery } from '@chia/api-react';
+import { Trade as TradeIcon } from '@chives/icons';
+import { useCancelOfferMutation, useGetAllOffersQuery, useGetOfferDataMutation, useGetWalletsQuery } from '@chives/api-react';
 import { colorForOfferState, displayStringForOfferState, formatAmountForWalletType, suggestedFilenameForOffer } from './utils';
 import useAssetIdName from '../../hooks/useAssetIdName';
 import { CreateOfferEditor } from './OfferEditor';
@@ -77,7 +77,7 @@ function ConfirmOfferCancellation(props: ConfirmOfferCancellationProps) {
 
   // Communicate value updates to the parent component
   useEffect(() => {
-    const feeInMojos = fee ? Number.parseFloat(chiaToMojo(fee)) : 0;
+    const feeInMojos = fee ? Number.parseFloat(chivesToMojo(fee)) : 0;
     onUpdateValues({ cancelWithTransaction, cancellationFee: feeInMojos });
   }, [cancelWithTransaction, fee]);
 

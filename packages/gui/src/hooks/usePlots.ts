@@ -1,8 +1,8 @@
 import { useMemo } from 'react';
 import { sumBy, uniqBy } from 'lodash';
-import type { Plot } from '@chia/api';
+import type { Plot } from '@chives/api';
 import PlotQueueItem from 'types/PlotQueueItem';
-import { useGetCombinedPlotsQuery, useGetPlotQueueQuery, useThrottleQuery } from '@chia/api-react';
+import { useGetCombinedPlotsQuery, useGetPlotQueueQuery, useThrottleQuery } from '@chives/api-react';
 // import useThrottleSelector from './useThrottleSelector';
 
 export default function usePlots(): {

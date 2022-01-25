@@ -1,6 +1,6 @@
 import { useMemo } from 'react';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
-import { CATToken, Wallet } from '@chia/core';
+import { useGetCatListQuery, useGetWalletsQuery } from '@chives/api-react';
+import { CATToken, Wallet } from '@chives/core';
 import WalletType from '../constants/WalletType';
 
 export type AssetIdMapEntry = {
@@ -34,7 +34,7 @@ export default function useAssetIdName() {
 
       if (walletType === WalletType.STANDARD_WALLET) {
         assetId = 'xch';
-        name = 'Chia';
+        name = 'Chives';
         symbol = 'XCH';
         isVerified = true;
       }

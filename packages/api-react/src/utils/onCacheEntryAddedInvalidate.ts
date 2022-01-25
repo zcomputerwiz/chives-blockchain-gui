@@ -1,4 +1,4 @@
-import type { Service } from '@chia/api';
+import type { Service } from '@chives/api';
 
 type Invalidate = {
   command: string;

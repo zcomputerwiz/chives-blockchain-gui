@@ -1,20 +1,20 @@
 import React, { useMemo } from 'react';
 import { Trans } from '@lingui/macro';
-import { useCurrencyCode, mojoToChiaLocaleString } from '@chia/core';
-import { useGetFarmedAmountQuery } from '@chia/api-react';
+import { useCurrencyCode, mojoToChivesLocaleString } from '@chives/core';
+import { useGetFarmedAmountQuery } from '@chives/api-react';
 import FarmCard from './FarmCard';
 
-export default function FarmCardTotalChiaFarmed() {
+export default function FarmCardTotalChivesFarmed() {
   const currencyCode = useCurrencyCode();
   const { data, isLoading } = useGetFarmedAmountQuery();
 
   const farmedAmount = data?.farmedAmount;
 
-  const totalChiaFarmed = useMemo(() => {
+  const totalChivesFarmed = useMemo(() => {
     if (farmedAmount !== undefined) {
       return (
         <>
-          {mojoToChiaLocaleString(farmedAmount)}
+          {mojoToChivesLocaleString(farmedAmount)}
           &nbsp;
           {currencyCode}
         </>
@@ -24,8 +24,8 @@ export default function FarmCardTotalChiaFarmed() {
 
   return (
     <FarmCard
-      title={<Trans>Total Chia Farmed</Trans>}
-      value={totalChiaFarmed}
+      title={<Trans>Total Chives Farmed</Trans>}
+      value={totalChivesFarmed}
       loading={isLoading}
     />
   );

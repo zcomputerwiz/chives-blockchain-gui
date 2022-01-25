@@ -1,9 +1,9 @@
 import Big from 'big.js';
 import Unit from '../constants/Unit';
-import chiaFormatter from './chiaFormatter';
+import chivesFormatter from './chivesFormatter';
 
-export default function mojoToChia(mojo: string | number | Big): number {
-  return chiaFormatter(mojo, Unit.MOJO)
-    .to(Unit.CHIA)
+export default function mojoToChives(mojo: string | number | Big): number {
+  return chivesFormatter(mojo, Unit.MOJO)
+    .to(Unit.CHIVES)
     .toNumber();
 }

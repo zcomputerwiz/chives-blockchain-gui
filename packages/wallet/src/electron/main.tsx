@@ -10,8 +10,8 @@ import '../config/env';
 import handleSquirrelEvent from './handleSquirrelEvent';
 import config from '../config/config';
 import dev_config from '../dev_config';
-import chiaEnvironment from '../util/chiaEnvironment';
-import chiaConfig from '../util/config';
+import chivesEnvironment from '../util/chivesEnvironment';
+import chivesConfig from '../util/config';
 import { i18n } from '../config/locales';
 import About from '../components/about/About';
 import packageJson from '../../package.json';
@@ -97,7 +97,7 @@ async function startMain() {
   
     const ensureCorrectEnvironment = () => {
       // check that the app is either packaged or running in the python venv
-      if (!chiaEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
+      if (!chivesEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
         console.log('App must be installed or in venv');
         app.quit();
         return false;
@@ -124,11 +124,11 @@ async function startMain() {
       let isClosing = false;
   
       const createWindow = async () => {
-        if (chiaConfig.manageDaemonLifetime()) {
-          chiaEnvironment.startChiaDaemon();
+        if (chivesConfig.manageDaemonLifetime()) {
+          chivesEnvironment.startChivesDaemon();
         }
 
-        ipcMain.handle('getConfig', () => chiaConfig.loadConfig('standalone_wallet'));
+        ipcMain.handle('getConfig', () => chivesConfig.loadConfig('standalone_wallet'));
 
         decidedToClose = false;
         mainWindow = new BrowserWindow({
@@ -173,7 +173,7 @@ async function startMain() {
         });
   
         // don't show remote daeomn detials in the title bar
-        if (!chiaConfig.manageDaemonLifetime()) {
+        if (!chivesConfig.manageDaemonLifetime()) {
           mainWindow.webContents.on('did-finish-load', () => {
             mainWindow.setTitle(`${app.getName()} [${global.daemon_rpc_ws}]`);
           });
@@ -184,7 +184,7 @@ async function startMain() {
         // }
         mainWindow.on('close', (e) => {
           // if the daemon isn't local we aren't going to try to start/stop it
-          if (decidedToClose || !chiaConfig.manageDaemonLifetime()) {
+          if (decidedToClose || !chivesConfig.manageDaemonLifetime()) {
             return;
           }
           e.preventDefault();
@@ -355,7 +355,7 @@ async function startMain() {
           role: 'help',
           submenu: [
             {
-              label: i18n._(/* i18n */ { id: 'Chia Blockchain Wiki' }),
+              label: i18n._(/* i18n */ { id: 'Chives Blockchain Wiki' }),
               click: () => {
                 openExternal(
                   'https://github.com/HiveProject2021/chives-light-wallet/wiki',
@@ -400,13 +400,13 @@ async function startMain() {
             {
               label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
               click: () => {
-                openExternal('https://keybase.io/team/chia_network.public');
+                openExternal('https://keybase.io/team/chives_network.public');
               },
             },
             {
               label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
               click: () => {
-                openExternal('https://twitter.com/chia_project');
+                openExternal('https://twitter.com/chives_project');
               },
             },
           ],
@@ -414,12 +414,12 @@ async function startMain() {
       ];
   
       if (process.platform === 'darwin') {
-        // Chia Blockchain menu (Mac)
+        // Chives Blockchain menu (Mac)
         template.unshift({
-          label: i18n._(/* i18n */ { id: 'Chia' }),
+          label: i18n._(/* i18n */ { id: 'Chives' }),
           submenu: [
             {
-              label: i18n._(/* i18n */ { id: 'About Chia Wallet' }),
+              label: i18n._(/* i18n */ { id: 'About Chives Wallet' }),
               click: () => {
                 openAbout();
               },
@@ -506,7 +506,7 @@ async function startMain() {
             type: 'separator',
           },
           {
-            label: i18n._(/* i18n */ { id: 'About Chia Wallet' }),
+            label: i18n._(/* i18n */ { id: 'About Chives Wallet' }),
             click() {
               openAbout();
             },

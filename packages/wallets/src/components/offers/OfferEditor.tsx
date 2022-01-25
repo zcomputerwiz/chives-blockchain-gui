@@ -11,8 +11,8 @@ import {
   useOpenDialog,
   useShowError,
   useShowSaveDialog,
-} from '@chia/core';
-import { useCreateOfferForIdsMutation } from '@chia/api-react';
+} from '@chives/core';
+import { useCreateOfferForIdsMutation } from '@chives/api-react';
 import {
   Button,
   Divider,
@@ -21,12 +21,12 @@ import {
 import type OfferEditorRowData from './OfferEditorRowData';
 import { suggestedFilenameForOffer } from './utils';
 import useAssetIdName from '../../hooks/useAssetIdName';
-import { WalletType } from '@chia/api';
+import { WalletType } from '@chives/api';
 import OfferEditorConditionsPanel from './OfferEditorConditionsPanel';
 import OfferShareDialog from './OfferShareDialog';
 import OfferLocalStorageKeys from './OfferLocalStorage';
 import styled from 'styled-components';
-import { chiaToMojo, catToMojo } from '@chia/core';
+import { chivesToMojo, catToMojo } from '@chives/core';
 import fs from 'fs';
 import { Remote } from 'electron';
 
@@ -64,7 +64,7 @@ function OfferEditor() {
     if (assetWalletId) {
       let mojoAmount = 0;
       if (walletType === WalletType.STANDARD_WALLET) {
-        mojoAmount = Number.parseFloat(chiaToMojo(amount));
+        mojoAmount = Number.parseFloat(chivesToMojo(amount));
       }
       else if (walletType === WalletType.CAT) {
         mojoAmount = Number.parseFloat(catToMojo(amount));

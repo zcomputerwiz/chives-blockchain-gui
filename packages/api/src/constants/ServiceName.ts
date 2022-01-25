@@ -1,13 +1,13 @@
 enum ServiceName {
-  WALLET = 'chia_wallet',
-  FULL_NODE = 'chia_full_node',
-  FARMER = 'chia_farmer',
-  HARVESTER = 'chia_harvester',
-  SIMULATOR = 'chia_full_node_simulator',
+  WALLET = 'chives_wallet',
+  FULL_NODE = 'chives_full_node',
+  FARMER = 'chives_farmer',
+  HARVESTER = 'chives_harvester',
+  SIMULATOR = 'chives_full_node_simulator',
   DAEMON = 'daemon',
-  PLOTTER = 'chia_plotter',
-  TIMELORD = 'chia_timelord',
-  INTRODUCER = 'chia_introducer',
+  PLOTTER = 'chives_plotter',
+  TIMELORD = 'chives_timelord',
+  INTRODUCER = 'chives_introducer',
   EVENTS = 'wallet_ui',
 };
 

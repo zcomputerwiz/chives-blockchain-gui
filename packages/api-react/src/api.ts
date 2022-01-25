@@ -1,10 +1,10 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
-import chiaLazyBaseQuery from './chiaLazyBaseQuery';
+import chivesLazyBaseQuery from './chivesLazyBaseQuery';
 
-export const baseQuery = chiaLazyBaseQuery({});
+export const baseQuery = chivesLazyBaseQuery({});
 
 export default createApi({
-  reducerPath: 'chiaApi',
+  reducerPath: 'chivesApi',
   baseQuery,
   endpoints: () => ({}),
 });

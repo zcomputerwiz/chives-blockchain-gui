@@ -1,8 +1,8 @@
 {
-  "name": "@chia/api",
-  "author": "Chia Network <hello@chivescoin.org> (https://chivescoin.org/)",
-  "description": "Chia API Library",
-  "productName": "Chia Blockchain",
+  "name": "@chives/api",
+  "author": "Chives Network <hello@chivescoin.org> (https://chivescoin.org/)",
+  "description": "Chives API Library",
+  "productName": "Chives Blockchain",
   "private": true,
   "version": "1.0.0",
   "engines": {

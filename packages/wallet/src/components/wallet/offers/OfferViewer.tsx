@@ -20,7 +20,7 @@ import {
   useOpenDialog,
   useOpenExternal,
   useShowError
-} from '@chia/core';
+} from '@chives/core';
 import {
   Box,
   Button,
@@ -35,8 +35,8 @@ import {
   Tooltip,
   Typography
 } from '@material-ui/core';
-import { OfferSummaryRecord, OfferTradeRecord } from '@chia/api';
-import { useCheckOfferValidityMutation, useTakeOfferMutation } from '@chia/api-react';
+import { OfferSummaryRecord, OfferTradeRecord } from '@chives/api';
+import { useCheckOfferValidityMutation, useTakeOfferMutation } from '@chives/api-react';
 import {
   colorForOfferState,
   displayStringForOfferState,
@@ -44,7 +44,7 @@ import {
 } from './utils';
 import useAssetIdName from '../../../hooks/useAssetIdName';
 import WalletType from '../../../constants/WalletType';
-import { chia_to_mojo, mojo_to_chia_string, mojo_to_colouredcoin_string } from '../../../util/chia';
+import { chives_to_mojo, mojo_to_chives_string, mojo_to_colouredcoin_string } from '../../../util/chives';
 import OfferCoinOfInterest from 'types/OfferCoinOfInterest';
 import OfferState from './OfferState';
 import OfferSummary from './OfferSummary';
@@ -218,7 +218,7 @@ function OfferDetails(props: OfferDetailsProps) {
         return (
           <Typography variant="body2">
             <Flex flexDirection="row" flexGrow={1} gap={1}>
-              {mojo_to_chia_string(coin.amount)}
+              {mojo_to_chives_string(coin.amount)}
             </Flex>
           </Typography>
         )
@@ -238,7 +238,7 @@ function OfferDetails(props: OfferDetailsProps) {
             interactive
           >
             <Link
-              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chiaexplorer.com/blockchain/coin/${coin.parentCoinInfo}`)}
+              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chivesexplorer.com/blockchain/coin/${coin.parentCoinInfo}`)}
             >
               {coin.parentCoinInfo}
             </Link>
@@ -261,7 +261,7 @@ function OfferDetails(props: OfferDetailsProps) {
             interactive
           >
             <Link
-              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chiaexplorer.com/blockchain/puzzlehash/${coin.puzzleHash}`)}
+              onClick={(event: React.SyntheticEvent) => handleLinkClicked(event, `https://www.chivesexplorer.com/blockchain/puzzlehash/${coin.puzzleHash}`)}
             >
               {coin.puzzleHash}
             </Link>
@@ -281,7 +281,7 @@ function OfferDetails(props: OfferDetailsProps) {
 
   async function handleAcceptOffer(formData: any) {
     const { fee } = formData;
-    const feeInMojos = fee ? Number.parseFloat(chia_to_mojo(fee)) : 0;
+    const feeInMojos = fee ? Number.parseFloat(chives_to_mojo(fee)) : 0;
     const offeredUnknownCATs: string[] = Object.entries(summary.offered).filter(([assetId]) => lookupByAssetId(assetId) === undefined).map(([assetId]) => assetId);
 
     const confirmedAccept = await openDialog(

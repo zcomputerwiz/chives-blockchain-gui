@@ -12,11 +12,11 @@ let self_hostname = 'localhost';
 
 async function loadConfig(net) {
   try {
-    // check if CHIA_ROOT is set. it overrides 'net'
+    // check if CHIVES_ROOT is set. it overrides 'net'
     const config_root_dir =
-      'CHIA_ROOT' in process.env
-        ? process.env.CHIA_ROOT
-        : path.join(os.homedir(), '.chia', net);
+      'CHIVES_ROOT' in process.env
+        ? process.env.CHIVES_ROOT
+        : path.join(os.homedir(), '.chives', net);
     const config = yaml.load(
       fs.readFileSync(path.join(config_root_dir, 'config/config.yaml'), 'utf8'),
     );

@@ -1,10 +1,10 @@
-# @chia/api
+# @chives/api
 
-![Alt text](https://www.chivescoin.org/img/chia_logo.svg)
+![Alt text](https://www.chivescoin.org/img/chives_logo.svg)
 
-This library provides support for TypeScript/JavaScript [Chia](https://www.chivescoin.org) apps to access the [Chia Blockchain RPC](https://github.com/HiveProject2021/chives-light-wallet/wiki/RPC-Interfaces), by making it easier to perform the following actions:
+This library provides support for TypeScript/JavaScript [Chives](https://www.chivescoin.org) apps to access the [Chives Blockchain RPC](https://github.com/HiveProject2021/chives-light-wallet/wiki/RPC-Interfaces), by making it easier to perform the following actions:
 
-- Making requests to the Chia Blockchain RPC.
+- Making requests to the Chives Blockchain RPC.
 - Catch responses and errors with standard try/catch and async/await syntax.
 - Catch error when the request has a timeout. Each request has a default timeout of 10 minutes.
 - Auto-connect to daemon when you send the first request.
@@ -15,7 +15,7 @@ This library provides support for TypeScript/JavaScript [Chia](https://www.chive
 ## Example
 
 ```ts
-import Client, { Wallet } from '@chia/api';
+import Client, { Wallet } from '@chives/api';
 import Websocket from 'ws';
 import sleep from 'sleep-promise';
 
