@@ -11,8 +11,8 @@ import {
   Flex,
   StateTypography,
   State,
-} from '@chia/core';
-import { useGetKeyringStatusQuery } from '@chia/api-react';
+} from '@chives/core';
+import { useGetKeyringStatusQuery } from '@chives/api-react';
 import {
   Grid,
   Typography,

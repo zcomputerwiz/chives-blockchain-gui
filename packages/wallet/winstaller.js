@@ -14,17 +14,17 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    name: "chia-blockchain",
-    appDirectory: path.join(rootPath, 'Chia-win32-x64'),
-    authors: 'Chia Network',
-    version: process.env.CHIA_INSTALLER_VERSION,
+    name: "chives-blockchain",
+    appDirectory: path.join(rootPath, 'Chives-win32-x64'),
+    authors: 'Chives Network',
+    version: process.env.CHIVES_INSTALLER_VERSION,
     noMsi: true,
-    iconUrl: 'https://raw.githubusercontent.com/Chia-Network/chia-blockchain/master/electron-react/src/assets/img/chia.ico',
+    iconUrl: 'https://raw.githubusercontent.com/Chia-Network/chives-blockchain/master/electron-react/src/assets/img/chives.ico',
     outputDirectory: path.join(outPath, 'windows-installer'),
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
-    exe: 'chia-blockchain.exe',
-    setupExe: 'ChiaSetup-' + process.env.CHIA_INSTALLER_VERSION + '.exe',
-    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chia.ico')
+    exe: 'chives-blockchain.exe',
+    setupExe: 'ChivesSetup-' + process.env.CHIVES_INSTALLER_VERSION + '.exe',
+    setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chives.ico')
   })
 }

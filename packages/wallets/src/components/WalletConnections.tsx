@@ -5,10 +5,10 @@ import {
   FormatBytes,
   Loading,
   Table,
-} from '@chia/core';
+} from '@chives/core';
 import { Tooltip } from '@material-ui/core';
-import { Connection, ServiceConnectionName } from '@chia/api';
-import { useGetWalletConnectionsQuery } from '@chia/api-react';
+import { Connection, ServiceConnectionName } from '@chives/api';
+import { useGetWalletConnectionsQuery } from '@chives/api-react';
 
 const cols = [
   {

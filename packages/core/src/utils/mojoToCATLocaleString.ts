@@ -1,9 +1,9 @@
 import Big from 'big.js';
 import Unit from '../constants/Unit';
-import chiaFormatter from './chiaFormatter';
+import chivesFormatter from './chivesFormatter';
 
 export default function mojoToCATLocaleString(mojo: string | number | Big) {
-  return chiaFormatter(Number(mojo), Unit.MOJO)
+  return chivesFormatter(Number(mojo), Unit.MOJO)
     .to(Unit.CAT)
     .toLocaleString();
 }

@@ -1,5 +1,5 @@
 import { defineMessage } from '@lingui/macro';
-import { WalletType } from '@chia/api';
+import { WalletType } from '@chives/api';
 
 const WalletName = {
   [WalletType.STANDARD_WALLET]: defineMessage({

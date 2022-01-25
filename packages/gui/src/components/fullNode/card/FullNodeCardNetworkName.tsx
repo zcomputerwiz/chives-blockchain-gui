@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { useGetNetworkInfoQuery } from '@chia/api-react';
-import { CardSimple } from '@chia/core';
+import { useGetNetworkInfoQuery } from '@chives/api-react';
+import { CardSimple } from '@chives/core';
 
 export default function FullNodeCardNetworkName() {
   const { data: networkInfo, isLoading } = useGetNetworkInfoQuery(); 

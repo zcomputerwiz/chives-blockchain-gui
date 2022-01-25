@@ -1,9 +1,9 @@
-import type { Wallet } from '@chia/api';
-import { WalletType } from '@chia/api';
-import { mojoToCATLocaleString, mojoToChiaLocaleString } from '@chia/core';
+import type { Wallet } from '@chives/api';
+import { WalletType } from '@chives/api';
+import { mojoToCATLocaleString, mojoToChivesLocaleString } from '@chives/core';
 
 export default function getWalletHumanValue(wallet: Wallet, value: number): string {
   return wallet.type === WalletType.CAT
     ? mojoToCATLocaleString(value)
-    : mojoToChiaLocaleString(value);
+    : mojoToChivesLocaleString(value);
 }

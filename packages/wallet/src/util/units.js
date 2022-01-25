@@ -1,17 +1,17 @@
 const units = {
-  chia: 1,
+  chives: 1,
   mojo: 1 / 1e12,
   colouredcoin: 1 / 1e9,
 };
 
 const aliases = {
-  chia: ['ch', 'chia', 'Chia'],
+  chives: ['ch', 'chives', 'Chives'],
   mojo: ['mj', 'mojo'],
   colouredcoin: ['cc', 'colouredcoin'],
 };
 
 const display = {
-  chia: {
+  chives: {
     format: '{amount} CH',
     fractionDigits: 8,
   },

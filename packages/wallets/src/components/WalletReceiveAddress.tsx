@@ -1,7 +1,7 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
-import { CopyToClipboard, Card, Loading } from '@chia/core';
-import { useGetCurrentAddressQuery, useGetNextAddressMutation } from '@chia/api-react';
+import { CopyToClipboard, Card, Loading } from '@chives/core';
+import { useGetCurrentAddressQuery, useGetNextAddressMutation } from '@chives/api-react';
 import {
   Box,
   Button,

@@ -11,11 +11,11 @@ import {
   Form,
   FormBackButton,
   State,
-  mojoToChiaLocaleString,
-  chiaToMojo,
-} from '@chia/core';
+  mojoToChivesLocaleString,
+  chivesToMojo,
+} from '@chives/core';
 import { useForm } from 'react-hook-form';
-import { usePwAbsorbRewardsMutation, useGetPlotNFTsQuery } from '@chia/api-react'
+import { usePwAbsorbRewardsMutation, useGetPlotNFTsQuery } from '@chives/api-react'
 import { ChevronRight as ChevronRightIcon } from '@material-ui/icons';
 import { Grid, Typography } from '@material-ui/core';
 import { useParams } from 'react-router';
@@ -63,7 +63,7 @@ export default function PlotNFTAbsorbRewards(props: Props) {
       const walletId = nft?.poolWalletStatus.walletId;
 
       const { fee } = data;
-      const feeMojos = chiaToMojo(fee);
+      const feeMojos = chivesToMojo(fee);
 
 
       if (walletId === undefined) { 
@@ -143,7 +143,7 @@ export default function PlotNFTAbsorbRewards(props: Props) {
               <Trans>
                 You will recieve{' '}
                 <UnitFormat
-                  value={mojoToChiaLocaleString(balance)}
+                  value={mojoToChivesLocaleString(balance)}
                   display="inline"
                   state={State.SUCCESS}
                 />{' '}

@@ -1,9 +1,9 @@
 import React from 'react';
-import { Logo } from '@chia/core';
+import { Logo } from '@chives/core';
 import styled from 'styled-components';
-import { useGetCatListQuery } from '@chia/api-react';
-import type { Wallet } from '@chia/api';
-import { WalletType } from '@chia/api';
+import { useGetCatListQuery } from '@chives/api-react';
+import type { Wallet } from '@chives/api';
+import { WalletType } from '@chives/api';
 import { Typography } from '@material-ui/core';
 
 const StyledSymbol = styled(Typography)`

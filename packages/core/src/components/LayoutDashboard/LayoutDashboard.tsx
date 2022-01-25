@@ -8,9 +8,9 @@ import {
   Logo,
   ToolbarSpacing,
   Loading,
-} from '@chia/core';
+} from '@chives/core';
 import { DashboardTitleTarget } from '../DashboardTitle';
-import { useLogout } from '@chia/api-react';
+import { useLogout } from '@chives/api-react';
 import { ExitToApp as ExitToAppIcon } from '@material-ui/icons';
 import Settings from '../Settings';
 import Tooltip from '../Tooltip';

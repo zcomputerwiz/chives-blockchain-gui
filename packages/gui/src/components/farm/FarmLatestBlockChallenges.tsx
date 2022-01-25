@@ -1,8 +1,8 @@
 import React from 'react';
 import { Trans } from '@lingui/macro';
 import { Typography } from '@material-ui/core';
-import { Link, Table, Card } from '@chia/core';
-import { useGetSignagePointsQuery, useGetCombinedPlotsQuery } from '@chia/api-react';
+import { Link, Table, Card } from '@chives/core';
+import { useGetSignagePointsQuery, useGetCombinedPlotsQuery } from '@chives/api-react';
 import type { Row } from '../core/components/Table/Table';
 
 const cols = [
@@ -56,13 +56,13 @@ export default function FarmLatestBlockChallenges() {
       />
       <Typography variant="caption">
         <Trans>
-          *Want to explore Chia’s blocks further? Check out{' '}
+          *Want to explore Chives’s blocks further? Check out{' '}
           <Link
             color="primary"
-            href="https://www.chiaexplorer.com/"
+            href="https://www.chivesexplorer.com/"
             target="_blank"
           >
-            Chia Explorer
+            Chives Explorer
           </Link>{' '}
           built by an open source developer.
         </Trans>
