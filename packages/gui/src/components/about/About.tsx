@@ -70,7 +70,7 @@ const Spacer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const url = 'https://chives.net';
+const url = 'https://chivescoin.org';
 
 type Props = {
   version: string;
@@ -114,7 +114,7 @@ export default function About(props: Props) {
         </StyledLink>
         <StyledSubTitle>{description}</StyledSubTitle>
         <Spacer />
-        <div className="copyright">Copyright (c) 2021 Chives Network</div>
+        <div className="copyright">Copyright (c) 2021 Hive Project</div>
         <Spacer />
         <VersionsTable>
           {versions?.electron && (

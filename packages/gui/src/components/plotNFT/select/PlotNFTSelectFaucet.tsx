@@ -15,7 +15,7 @@ export default function PlotNFTSelectFaucet(props: Props) {
   const openExternal = useOpenExternal();
 
   function handleClick() {
-    openExternal('https://faucet.chives.net/');
+    openExternal('https://faucet.chivescoin.org/');
   }
 
   return (

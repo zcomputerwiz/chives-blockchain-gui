@@ -396,7 +396,7 @@ msgstr "Chives Blockchains wiki"
 
 #: src/components/wallet/standard/WalletStandard.tsx:23
 #~ msgid "Chives Wallet"
-#~ msgstr "Chia-plånbok"
+#~ msgstr "Chives-plånbok"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:36
 #~ msgid "Choose Number of Plots"
@@ -853,7 +853,7 @@ msgstr ""
 
 #: src/components/wallet/WalletImport.tsx:94
 #~ msgid "Enter the 24 word mnemonic that you have saved in order to restore your Chives wallet."
-#~ msgstr "Skriv in din sparade minnesfras på 24 ord för att återställa din Chia-plånbok."
+#~ msgstr "Skriv in din sparade minnesfras på 24 ord för att återställa din Chives-plånbok."
 
 #: src/components/farm/card/FarmCard.tsx:57
 #~ msgid "Error"

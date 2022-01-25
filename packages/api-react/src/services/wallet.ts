@@ -1,5 +1,5 @@
-import { Wallet, CAT, Pool, Farmer, WalletType } from '@chia/api';
-import type { Transaction, WalletConnections } from '@chia/api';
+import { Wallet, CAT, Pool, Farmer, WalletType } from '@chives/api';
+import type { Transaction, WalletConnections } from '@chives/api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';
 import normalizePoolState from '../utils/normalizePoolState';
 import api, { baseQuery } from '../api';

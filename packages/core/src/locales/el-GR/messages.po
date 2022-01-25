@@ -2631,7 +2631,7 @@ msgstr ""
 
 #: src/components/app/AppTimeBombAlert.tsx:19
 #~ msgid "This version of Chives is no longer compatible with the blockchain and can not safely farm."
-#~ msgstr "Αυτή η έκδοση του Chia δεν είναι πλέον συμβατή με το blockchain και δεν μπορεί να γίνει farm με ασφάλεια."
+#~ msgstr "Αυτή η έκδοση του Chives δεν είναι πλέον συμβατή με το blockchain και δεν μπορεί να γίνει farm με ασφάλεια."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:154
 #~ msgid "Thread Multiplier for Phase 2"
@@ -2659,8 +2659,8 @@ msgstr ""
 #~ msgid "Total Balance"
 #~ msgstr "Συνολικό Υπόλοιπο"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:27
-#~ msgid "Total Chia Farmed"
+#: src/components/farm/card/FarmCardTotalChivesFarmed.tsx:27
+#~ msgid "Total Chives Farmed"
 #~ msgstr ""
 
 #: src/components/fullNode/card/FullNodeCardTotalIterations.tsx:14
@@ -2876,7 +2876,7 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:30
-#~ msgid "WalletItem.chiaWallet"
+#~ msgid "WalletItem.chivesWallet"
 #~ msgstr ""
 
 #: src/components/wallet/Wallets.tsx:48
@@ -2913,8 +2913,8 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/plot/overview/PlotOverviewPlots.tsx:139
-#~ msgid "Want to earn more Chia? Add more plots to your farm."
-#~ msgstr "Θέλετε να κερδίσετε περισσότερα Chia? Προσθέστε περισσότερα plots στο farm σας."
+#~ msgid "Want to earn more Chives? Add more plots to your farm."
+#~ msgstr "Θέλετε να κερδίσετε περισσότερα Chives? Προσθέστε περισσότερα plots στο farm σας."
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:87
 #~ msgid "Want to have a delay before the next plot starts?"
@@ -2945,8 +2945,8 @@ msgstr ""
 #~ msgstr "Το βάρος είναι η συνολική προστιθέμενη δυσκολία όλων των υπο-μπλοκ μέχρι και αυτό"
 
 #: src/screens/SelectKey/SelectKey.tsx:105
-msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Καλώς ήρθατε στη Chia. Παρακαλώ συνδεθείτε με ένα υπάρχον κλειδί ή δημιουργήστε ένα νέο κλειδί."
+msgid "Welcome to Chives. Please log in with an existing key, or create a new key."
+msgstr "Καλώς ήρθατε στη Chives. Παρακαλώ συνδεθείτε με ένα υπάρχον κλειδί ή δημιουργήστε ένα νέο κλειδί."
 
 #: src/components/_wallet_old/WalletAdd.tsx:66
 #~ msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"
@@ -3020,8 +3020,8 @@ msgstr ""
 #~ msgstr ""
 
 #: src/components/app/AppTimeBomb.tsx:28
-#~ msgid "You need to upgrade the Chia application as this version will stop working soon!"
-#~ msgstr "You need to upgrade the Chia application as this version will stop working soon!"
+#~ msgid "You need to upgrade the Chives application as this version will stop working soon!"
+#~ msgstr "You need to upgrade the Chives application as this version will stop working soon!"
 
 #: src/components/plotNFT/select/PlotNFTSelectFaucet.tsx:36
 #~ msgid "You need {currencyCode} to join a pool."
@@ -3078,7 +3078,7 @@ msgstr ""
 #: src/components/app/AppKeyringMigrator.tsx:181
 #: src/components/settings/ChangePassphrasePrompt.tsx:211
 #: src/components/settings/SetPassphrasePrompt.tsx:193
-#~ msgid "Your passphrase can be stored in your system's secure credential store. Chia will be able to access your keys without prompting for your passphrase."
+#~ msgid "Your passphrase can be stored in your system's secure credential store. Chives will be able to access your keys without prompting for your passphrase."
 #~ msgstr ""
 
 #: src/components/settings/Settings.tsx:85
@@ -3163,9 +3163,9 @@ msgstr ""
 #~ msgid "{currencyCode} Block Rewards"
 #~ msgstr "{currencyCode} Ανταμοιβές μπλοκ"
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:29
-#~ msgid "{currencyCode} Total Chia Farmed"
-#~ msgstr "{currencyCode} Σύνολο Chia που έχουν γίνει Farmed"
+#: src/components/farm/card/FarmCardTotalChivesFarmed.tsx:29
+#~ msgid "{currencyCode} Total Chives Farmed"
+#~ msgstr "{currencyCode} Σύνολο Chives που έχουν γίνει Farmed"
 
 #: src/components/farm/card/FarmCardUserFees.tsx:28
 #~ msgid "{currencyCode} User Transaction Fees"
