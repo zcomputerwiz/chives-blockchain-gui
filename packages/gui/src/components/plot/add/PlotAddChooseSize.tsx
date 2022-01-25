@@ -79,7 +79,7 @@ export default function PlotAddChooseSize(props: Props) {
           }
           <Link
             target="_blank"
-            href="https://github.com/HiveProject2021/chia-blockchain/wiki/k-sizes"
+            href="https://github.com/HiveProject2021/chives-light-wallet/wiki/k-sizes"
           >
             Learn more
           </Link>

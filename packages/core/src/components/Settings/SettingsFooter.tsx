@@ -16,7 +16,7 @@ const StyledRoot = styled(Flex)`
 async function openFAQURL(): Promise<void> {
   try {
     const shell: Shell = (window as any).shell;
-    await shell.openExternal('https://github.com/HiveProject2021/chia-blockchain/wiki/FAQ');
+    await shell.openExternal('https://github.com/HiveProject2021/chives-light-wallet/wiki/FAQ');
   }
   catch (e) {
     console.error(e);

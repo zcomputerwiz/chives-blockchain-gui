@@ -358,7 +358,7 @@ async function startMain() {
               label: i18n._(/* i18n */ { id: 'Chia Blockchain Wiki' }),
               click: () => {
                 openExternal(
-                  'https://github.com/HiveProject2021/chia-blockchain/wiki',
+                  'https://github.com/HiveProject2021/chives-light-wallet/wiki',
                 );
               },
             },
@@ -366,7 +366,7 @@ async function startMain() {
               label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
               click: () => {
                 openExternal(
-                  'https://github.com/HiveProject2021/chia-blockchain/wiki/FAQ',
+                  'https://github.com/HiveProject2021/chives-light-wallet/wiki/FAQ',
                 );
               },
             },
@@ -374,7 +374,7 @@ async function startMain() {
               label: i18n._(/* i18n */ { id: 'Release Notes' }),
               click: () => {
                 openExternal(
-                  'https://github.com/HiveProject2021/chia-blockchain/releases',
+                  'https://github.com/HiveProject2021/chives-light-wallet/releases',
                 );
               },
             },
@@ -382,7 +382,7 @@ async function startMain() {
               label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
               click: () => {
                 openExternal(
-                  'https://github.com/HiveProject2021/chia-blockchain/blob/master/CONTRIBUTING.md',
+                  'https://github.com/HiveProject2021/chives-light-wallet/blob/master/CONTRIBUTING.md',
                 );
               },
             },
@@ -393,7 +393,7 @@ async function startMain() {
               label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
               click: () => {
                 openExternal(
-                  'https://github.com/HiveProject2021/chia-blockchain/issues',
+                  'https://github.com/HiveProject2021/chives-light-wallet/issues',
                 );
               },
             },
