@@ -12,9 +12,9 @@ type Display = {
 const display: {
   [key in Unit]: Display;
 } = {
-  chia: {
-    format: '{amount} XCH',
-    fractionDigits: 12,
+  chives: {
+    format: '{amount} XCC',
+    fractionDigits: 8,
   },
   mojo: {
     format: '{amount} MJ',
@@ -22,7 +22,7 @@ const display: {
   },
   cat: {
     format: '{amount} CAT',
-    fractionDigits: 3,
+    fractionDigits: 5,
   },
 };
 

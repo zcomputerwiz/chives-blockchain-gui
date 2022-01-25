@@ -13,7 +13,7 @@ const aliases = {
 const display = {
   chia: {
     format: '{amount} CH',
-    fractionDigits: 12,
+    fractionDigits: 8,
   },
   mojo: {
     format: '{amount} MJ',
@@ -21,7 +21,7 @@ const display = {
   },
   colouredcoin: {
     format: '{amount} CC',
-    fractionDigits: 3,
+    fractionDigits: 5,
   },
 };
 
