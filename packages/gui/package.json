@@ -1,6 +1,6 @@
 {
     "name": "@chia/gui",
-    "author": "Chia Network <hello@chia.net> (https://chia.net/)",
+    "author": "Chia Network <hello@chivescoin.org> (https://chivescoin.org/)",
     "description": "GUI for Chia Blockchain",
     "productName": "Chia Blockchain",
     "private": true,

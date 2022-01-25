@@ -70,7 +70,7 @@ const Spacer = styled.div`
   margin-bottom: 1rem;
 `;
 
-const url = 'https://chia.net';
+const url = 'https://chivescoin.org';
 
 type Props = {
   version: string;

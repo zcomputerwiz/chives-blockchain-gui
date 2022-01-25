@@ -1,6 +1,6 @@
 {
   "name": "@chia/api-react",
-  "author": "Chia Network <hello@chia.net> (https://chia.net/)",
+  "author": "Chia Network <hello@chivescoin.org> (https://chivescoin.org/)",
   "description": "Chia API react store library",
   "productName": "Chia Blockchain",
   "private": true,

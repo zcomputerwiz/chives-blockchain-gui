@@ -26,7 +26,7 @@ async function openFAQURL(): Promise<void> {
 async function openSendFeedbackURL(): Promise<void> {
   try {
     const shell: Shell = (window as any).shell;
-    await shell.openExternal('https://feedback.chia.net/lightwallet');
+    await shell.openExternal('https://feedback.chivescoin.org/lightwallet');
   }
   catch (e) {
     console.error(e);

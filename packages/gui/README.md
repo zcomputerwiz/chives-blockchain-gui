@@ -1,5 +1,5 @@
 # chives-light-wallet
-![Alt text](https://www.chia.net/img/chia_logo.svg)
+![Alt text](https://www.chivescoin.org/img/chia_logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/HiveProject2021/chives-light-wallet?logo=GitHub)
 

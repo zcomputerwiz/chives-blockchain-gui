@@ -1,8 +1,8 @@
 # @chia/api
 
-![Alt text](https://www.chia.net/img/chia_logo.svg)
+![Alt text](https://www.chivescoin.org/img/chia_logo.svg)
 
-This library provides support for TypeScript/JavaScript [Chia](https://www.chia.net) apps to access the [Chia Blockchain RPC](https://github.com/HiveProject2021/chives-light-wallet/wiki/RPC-Interfaces), by making it easier to perform the following actions:
+This library provides support for TypeScript/JavaScript [Chia](https://www.chivescoin.org) apps to access the [Chia Blockchain RPC](https://github.com/HiveProject2021/chives-light-wallet/wiki/RPC-Interfaces), by making it easier to perform the following actions:
 
 - Making requests to the Chia Blockchain RPC.
 - Catch responses and errors with standard try/catch and async/await syntax.
