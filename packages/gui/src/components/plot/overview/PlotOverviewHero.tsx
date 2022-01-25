@@ -36,7 +36,7 @@ export default function PlotOverviewHero() {
               }
               <Link
                 target="_blank"
-                href="https://github.com/Chia-Network/chives-light-wallet/wiki/Network-Architecture"
+                href="https://github.com/HiveProject2021/chives-light-wallet/wiki/Network-Architecture"
               >
                 Learn more
               </Link>
