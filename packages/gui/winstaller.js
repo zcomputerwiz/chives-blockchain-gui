@@ -14,7 +14,7 @@ function getInstallerConfig () {
   const outPath = path.join(rootPath, 'release-builds')
 
   return Promise.resolve({
-    name: "chives-light-wallet",
+    name: "chives-wallet",
     appDirectory: path.join(rootPath, 'Chives-win32-x64'),
     authors: 'Hive Project',
     version: process.env.CHIVES_INSTALLER_VERSION,

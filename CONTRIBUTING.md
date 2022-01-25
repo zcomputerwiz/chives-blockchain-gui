@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the chives-light-wallet project!
+Welcome to the chives-wallet project!
 We are happy that you are taking a look at the code for Chives, a proof of space and time cryptocurrency.
 
 A lot of fascinating new cryptography and blockchain concepts are used and implemented here.

@@ -1,4 +1,4 @@
-# chives-light-wallet
+# chives-wallet
 ![Alt text](https://www.chivescoin.org/img/chives_logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/HiveProject2021/chives-light-wallet?logo=GitHub)
@@ -9,12 +9,12 @@ information on this project.
 
 ## Installing
 
-This is the GUI for chives-light-wallet. It is built into distribution packages in the chives-light-wallet repository.
+This is the GUI for chives-wallet. It is built into distribution packages in the chives-wallet repository.
 
 Install instructions are available in the
 [INSTALL](https://github.com/HiveProject2021/chives-light-wallet/wiki/INSTALL)
 section of the
-[chives-light-wallet repository wiki](https://github.com/HiveProject2021/chives-light-wallet/wiki).
+[chives-wallet repository wiki](https://github.com/HiveProject2021/chives-light-wallet/wiki).
 
 ## Running
 

@@ -1,4 +1,4 @@
-# chives-light-wallet
+# chives-wallet
 ![Alt text](https://www.chivescoin.org/img/chives_logo.svg)
 
 ![GitHub contributors](https://img.shields.io/github/contributors/HiveProject2021/chives-light-wallet?logo=GitHub)
