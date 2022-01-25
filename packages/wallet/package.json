@@ -1,6 +1,6 @@
 {
   "name": "@chives/wallet",
-  "author": "Chives Network <hello@chivescoin.org> (https://chivescoin.org/)",
+  "author": "Hive Project <hello@chivescoin.org> (https://chivescoin.org/)",
   "description": "Standalone wallet for Chives Blockchain",
   "productName": "Chives Wallet Beta",
   "private": true,

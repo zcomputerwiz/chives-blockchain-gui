@@ -16,7 +16,7 @@ function getInstallerConfig () {
   return Promise.resolve({
     name: "chives-light-wallet",
     appDirectory: path.join(rootPath, 'Chives-win32-x64'),
-    authors: 'Chives Network',
+    authors: 'Hive Project',
     version: process.env.CHIVES_INSTALLER_VERSION,
     noMsi: true,
     iconUrl: 'https://raw.githubusercontent.com/HiveProject2021/chives-light-wallet/master/electron-react/src/assets/img/chives.ico',

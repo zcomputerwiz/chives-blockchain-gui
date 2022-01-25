@@ -1,6 +1,6 @@
 {
   "name": "@chives/api-react",
-  "author": "Chives Network <hello@chivescoin.org> (https://chivescoin.org/)",
+  "author": "Hive Project <hello@chivescoin.org> (https://chivescoin.org/)",
   "description": "Chives API react store library",
   "productName": "Chives Blockchain",
   "private": true,
