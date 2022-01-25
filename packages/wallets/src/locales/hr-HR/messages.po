@@ -3406,7 +3406,7 @@ msgstr ""
 
 #: src/components/_selectKey_old/SelectKey.tsx:183
 #~ msgid "Welcome to Chives. Please log in with an existing key, or create a new key."
-#~ msgstr "Dobrodošao u Chia. Prijavi se sa postojećim ključem, ili kreiraj novi."
+#~ msgstr "Dobrodošao u Chives. Prijavi se sa postojećim ključem, ili kreiraj novi."
 
 #: src/components/WalletAdd.tsx:76
 msgid "Welcome! The following words are used for your wallet backup. Without them, you will lose access to your wallet, keep them safe! Write down each word along with the order number next to them. (Order is important)"

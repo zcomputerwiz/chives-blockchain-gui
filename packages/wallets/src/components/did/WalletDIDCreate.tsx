@@ -115,7 +115,7 @@ export default function WalletDIDCreate() {
                 <Typography variant="subtitle1">
                   Enter amount
                 </Typography>
-                <Tooltip title="The amount of Chia you enter must correspond to an even amount of mojos. One additional mojo will be added to the total amount for security purposes.">
+                <Tooltip title="The amount of Chives you enter must correspond to an even amount of mojos. One additional mojo will be added to the total amount for security purposes.">
                   <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
                 </Tooltip>
               </Flex>
