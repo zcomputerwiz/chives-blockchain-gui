@@ -24,7 +24,7 @@ function getInstallerConfig () {
     certificateFile: 'win_code_sign_cert.p12',
     certificatePassword: process.env.WIN_CODE_SIGN_PASS,
     exe: 'chives-wallet.exe',
-    setupExe: 'ChivesSetup-' + process.env.CHIVES_INSTALLER_VERSION + '.exe',
+    setupExe: 'ChivesWalletSetup-' + process.env.CHIVES_INSTALLER_VERSION + '.exe',
     setupIcon: path.join(rootPath, 'src', 'assets', 'img', 'chives.ico')
   })
 }
