@@ -140,7 +140,7 @@ if (!handleSquirrelEvent()) {
         chivesEnvironment.startChivesDaemon();
       }
 
-      ipcMain.handle('getConfig', () => chivesConfig.loadConfig('mainnet'));
+      ipcMain.handle('getConfig', () => chivesConfig.loadConfig('standalone_wallet'));
 
       ipcMain.handle('getTempDir', () => app.getPath('temp'));
 
